@@ -1,0 +1,8 @@
+<div id='counter'>Money</div>
+
+{{#each items}}
+    <div class='buy' data-upgrade={{@key}}>Buy {{this.name}} (Cost: {{this.cost}}, Production: {{this.production}})</div>
+{{/each}}
+
+<div id='clicker'>Click me</div>
+
