@@ -1,3 +1,4 @@
+import './styles/main.css'
 import { purchase } from './shop'
 import { setup, store } from './store'
 import { updateMoney, updateGain } from './data-utils'
@@ -32,7 +33,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     Array.from(document.getElementsByClassName('buy')).forEach(el => {
         el.addEventListener('click', e => {
-            purchase(data, el.dataset.upgrade)
+            purchase(data, el)
         })
     })
 })

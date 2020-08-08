@@ -1,8 +1,17 @@
-<div id='counter'>Money</div>
+<div class='container'>
+    <div class='clicker clickable' id='clicker'>Click</div>
+    <div class='container-data'>
+        <div class='counter' id='counter'>Money</div>
 
-{{#each items}}
-    <div class='buy' data-upgrade={{@key}}>Buy {{this.name}} (Cost: {{this.cost}}, Production: {{this.production}})</div>
-{{/each}}
+        <div class='buy-list'>
+            <p>Shop:</p>
+            {{#each items}}
+                <li class='buy clickable' data-upgrade={{@key}}>
+                    Buy {{this.name}} (Cost: {{this.cost}}, Production: {{this.production}})
+                    <span data-upgrade={{@key}} class='upgrade-count'></span>
+                </li>
+            {{/each}}
+        </div>
+    </div>
 
-<div id='clicker'>Click me</div>
-
+</div>

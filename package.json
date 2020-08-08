@@ -16,5 +16,9 @@
     "express-handlebars": "^5.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1"
   }
 }

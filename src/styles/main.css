@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.container-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.buy {
+    list-style: none;
+}
+
+.counter {
+    padding: 20px 0 20px 0;
+}
+
+.clicker {
+    width: 200px;
+    height: 200px;
+    background: lightgray;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clickable {
+    cursor: pointer;
+    user-select: none;
+}
